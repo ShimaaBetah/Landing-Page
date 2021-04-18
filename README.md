@@ -1,10 +1,10 @@
-#Landing-Page(Udacity Web track)
+# Landing-Page(Udacity Web track)
 This project is part of udacity professional web track course.
 
-##first step
+## first step
 downloading sekeleton containing html and css file 
 
-##requirment
+## requirment
  adding some fuctionality using javascript :
   -building navigation dynamically 
   -work with events to specify active sections
