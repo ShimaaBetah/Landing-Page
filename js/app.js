@@ -48,7 +48,7 @@ function buildNav(){
     list.appendChild(fragment);
 }
 //function to remove class active fromm all items sections and nav items
-function removeActiveclass(){
+function removeActiveClass(){
     for(sec of sectionsList){
         sec.classList.remove("your-active-class");
     }
@@ -57,11 +57,11 @@ function removeActiveclass(){
     }
 }
 //function to set active class to item in view port and its corresponding nav link  using getBoundingClientRect
-function addactive(){
+function addActive(){
  for(let sec of sectionsList){
      const rect = sec.getBoundingClientRect();
      if(rect.top>0&&rect.top<300){
-         removeActiveclass();
+         removeActiveClass();
          sec.classList.add("your-active-class");
          for(let link of links){
              if(link.textContent===sec.getAttribute("data-nav")){
@@ -83,7 +83,7 @@ buildNav();
 const links = document.querySelectorAll(".menu__link");
 
 //events
-window.addEventListener("scroll",addactive);
+window.addEventListener("scroll",addActive);
 
 
 
